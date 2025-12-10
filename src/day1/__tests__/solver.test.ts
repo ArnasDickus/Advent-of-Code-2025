@@ -29,7 +29,7 @@ test('Test with big Right dial numbers', () => {
     expect(safeLocker(['R700','L50'])).toBe(1)
 })
 
-// Unfortunatelly test failed. its not 307 and not 70
-// test('Puzzle test case', () => {
-//     expect(safeLocker(puzzleString)).toBe(70)
-// })
+// Unfortunatelly test failed. its not 307 and not 70 Correct answer is 1172
+test('Puzzle test case', () => {
+    expect(safeLocker(puzzleString)).toBe(1172)
+})
