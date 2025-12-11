@@ -37,15 +37,20 @@ test('Count any click to 0 with big numbers', () => {
     expect(safeLocker(['R1000'], true)).toBe(10)
 })
 
-// 6140 is incorrect.
-// test('Puzzle test case', () => {
-//     expect(safeLocker(puzzleString, true)).toBe(6140)
-// })
+test('Count any click to 0 with big numbers', () => {
+    expect(safeLocker(['R1000', 'R1000', 'R1000'], true)).toBe(30)
+})
+
+// 6140 too low
+// 7086 too high
+test('Puzzle test case', () => {
+    expect(safeLocker(puzzleString, true)).toBe(6140)
+})
 
 
 // First try: 307 and not
 // Second try: 70 
 // Final Correct answer is 1172
-// test('Puzzle test case', () => {
-//     expect(safeLocker(puzzleString, false)).toBe(1172)
-// })
+test('Puzzle test case', () => {
+    expect(safeLocker(puzzleString, false)).toBe(1172)
+})
